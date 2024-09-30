@@ -16,7 +16,7 @@ if file:
     df = pl.load_file(file, file_ext)
     columns = pl.get_column_names(df)
     selected_columns = st.multiselect("Select columns to display", columns, default=columns)
-    if st.checkbox("Filter data"):
+    if st.checkbox("Filter"):
         stcols = st.columns(3)
         text_columns = pl.get_columns_of_type(df, 'object')
         filter_column = stcols[0].selectbox("Select column to filter", text_columns)
@@ -26,3 +26,6 @@ if file:
             df_show = df[df[filter_column] == value][selected_columns]
     else:
         df_show = df[selected_columns]
+    
+    st.dataframe(df_show)
+    st.dataframe(df_show.describe())

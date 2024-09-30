@@ -22,4 +22,4 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
-
+I learned more about pandas after a few years since I lastly learned it from IST 256. Here in IST 356, and especially this assignment I learned how to combine pandas with streamlit, this is a lot better, and helped a lot for future data analytical purpose. Generally the code isn't hard, pretty straightforward, nothing really twisted or difficult to think of, but I do hope for better instructions, like what exactly you want see. Last week is great, you gave us pictures to demonstrate what exactly are we going to achieve, but this week, without pictures or so, is a lot harder.
